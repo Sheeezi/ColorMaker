@@ -27,19 +27,22 @@
                 <Slider x:Name="slrRed"
                         ThumbColor="{StaticResource Primary}"
                         MaximumTrackColor="{StaticResource Tertiary}"
-                        MinimumTrackColor="{StaticResource Secondary}" />
+                        MinimumTrackColor="{StaticResource Secondary}" 
+                        ValueChanged="Slider_ValueChanged" />
                 
                 <Label Text="Green value:" />
                 <Slider x:Name="slrGreen"
                         ThumbColor="{StaticResource Primary}"
                         MaximumTrackColor="{StaticResource Tertiary}"
-                        MinimumTrackColor="{StaticResource Secondary}" />
+                        MinimumTrackColor="{StaticResource Secondary}"
+                        ValueChanged="Slider_ValueChanged" />
 
                 <Label Text="Blue value:" />
                 <Slider x:Name="slrBlue"
                         ThumbColor="{StaticResource Primary}"
                         MaximumTrackColor="{StaticResource Tertiary}"
-                        MinimumTrackColor="{StaticResource Secondary}" />
+                        MinimumTrackColor="{StaticResource Secondary}"
+                        ValueChanged="Slider_ValueChanged" />
 
                 <Frame CornerRadius="25" HorizontalOptions="Center" Padding="8, 5">
                     <HorizontalStackLayout>
@@ -52,12 +55,14 @@
                                      HeightRequest="24"
                                      Source="copy.svg"
                                      VerticalOptions="Center"
-                                     WidthRequest="24" />
+                                     WidthRequest="24" 
+                                     Clicked="ImageButton_Clicked"/>
                     </HorizontalStackLayout>                    
                 </Frame>
                 <Button x:Name="btnRandom"
                         BackgroundColor="{StaticResource Primary}"
-                        Text="Generate random color" />
+                        Text="Generate random color" 
+                        Clicked="btnRandom_Clicked"/>
                 
             </VerticalStackLayout>
         </Frame>
